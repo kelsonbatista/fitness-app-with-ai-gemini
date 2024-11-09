@@ -55,7 +55,7 @@ Follow the steps below to set up and run the Fitness App locally.
 ## Build With
 - **Python**: Core programming language used for backend and AI functionalities.
 - **Flask**: Lightweight framework for building the web application.
-- **Generative AI**: Advanced technology for engagement analysis and decision-making.
+- **Gemini Generative AI**: Advanced technology for engagement analysis and decision-making.
 - **Hugging Face Spaces**: Hosting platform for seamless deployment.
 
 ## Live Demo
