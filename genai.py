@@ -42,6 +42,7 @@ def ia_decision(user):
       6. Se uma pessoa recebeu o desconto de primeira_aula ela pode receber o desconto anual.
       Lembre-se: manifeste apoio para pessoas com menos frequência, parabenize muita frequência e
         escolha de forma estratégica quem receberá cada desconto.
+      7. Responda sempre em inglês. Nunca use outro idioma.
       """
     user_decision = magical_if.start_chat(enable_automatic_function_calling=True)
     response = user_decision.send_message(f"Dados do usuário: {user}; Regras de negócio: {business_rules}")
