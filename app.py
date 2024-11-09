@@ -1,5 +1,6 @@
 from database import get_user, list_users
 from flask import Flask, render_template, request
+from genai import ia_decision
 
 app = Flask(__name__)
 
@@ -16,8 +17,8 @@ def user_details(user_id):
     if not user:
         return "Usuário não encontrado", 404
     if request.method == 'POST':
-        # Aqui a IA tomaria a decisão com base nos dados do usuário
-        pass
+        ia_response = ia_decision(user)
+        return render_template('user.html', user=user, user_id=user_id, message=ia_response)
     return render_template('user.html', user=user, user_id=user_id)
   
 if __name__ == '__main__':
